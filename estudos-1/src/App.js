@@ -1,6 +1,7 @@
 // api link
 // sujeitoprogramador.com/rn-api/?api=posts
 import React, { useEffect, useState } from 'react';
+import './style.css'
 
 
 
@@ -32,7 +33,19 @@ useEffect(()=>{
       <header>
         <strong>Nutri</strong>
       </header>
-    </div>
+        { nutri.map((item)=>{
+          return(
+            <article key={item.id} className='posts' >
+              <strong className='titulo' > {item.titulo} </strong>
+              <img src={item.capa} alt={item.titulo} className='cover-image' />
+              <p className='subtitulo' >
+                {item.subtitulo}
+              </p>
+              <a>Acessar</a>
+            </article>
+          )
+        }) }
+      </div>
   );
 }
 

@@ -34,3 +34,28 @@ header{
     padding: 20px;
     background-color: #fff;
 }
+
+.titulo {
+    margin: 8px 0 12px 0 ;
+}
+.subtitulo{
+    margin: 4px;
+}
+
+.button{
+    height: 32px;
+    color: chocolate;
+    border-radius: 8px;
+    border: 2px solid chocolate;
+    /* width: 12%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+.button:hover{
+    background-color: chocolate;
+    color: #fff;
+}

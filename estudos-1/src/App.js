@@ -41,7 +41,7 @@ useEffect(()=>{
               <p className='subtitulo' >
                 {item.subtitulo}
               </p>
-              <a>Acessar</a>
+              <a className='button' >Acessar</a>
             </article>
           )
         }) }
